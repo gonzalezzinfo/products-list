@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.header-angular{
+    margin: 0;
+    background: #707070 ;
+    background-image: -webkit-linear-gradient(86deg, #fff 30%, #707070 30.3%);
+    color:#FFF;    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0 130px;
+}
+.header-content h3{
+    font-size: 23px;;
+}
+.header-content h1{
+    font-weight: 700;
+    font-size: 48px;
+}
+.header-content p{
+    margin-top: 24px;
+    font-size: 16px;
+}
+.header-content a{
+    text-decoration: none;
+}
+.header-content a div{
+    display: inline-flex;
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #888888;
+    text-decoration: none;
+    margin: 20px 20px 0;
+}
