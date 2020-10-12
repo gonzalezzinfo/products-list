@@ -111,6 +111,7 @@
     color: #888888;
     opacity: 1;
 }
+
 /* Products */
 .divider {
     display: flex;
@@ -201,6 +202,47 @@
     border: 1px solid #707070;
     border-radius: 4px;
 }
+
+/* Newsletter */
+.newsletter-row{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #888888;
+    margin: 60px 0;
+}
+.newsletter-row p{
+    font-size: 16px;
+}
+.newsletter-form form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.newsletter-form form div{
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    margin: 20px;
+}
+.newsletter-form form div label{
+    margin-bottom: 7px;
+}
+.newsletter-form form div input{
+    width: 340px;
+    height: 30px;
+    padding: 0 5px;
+}
+.newsletter-form form input[type=submit]{
+    width: 260px;
+    height: 39px;
+    margin: 30px 0;
+
+    font-size: 18px;
+    color: #888888;
+}
+
+
 /* MOBILE */
 @media only screen and (max-width: 600px) {
 
