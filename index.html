@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="scripts.js" defer></script>
 </head>
 <header>
 <section>
@@ -52,106 +53,11 @@
                 <hr> <h3>Sua seleção especial</h3> <hr>
             </div>
 
-            <div class="product-row">
-
-                <div class="product-card">
-                    <div class="product-card-img"></div>
-                    <div class="product-card-content">
-                        <p class="product-card-name">Nome do produto</p>
-                        <p class="product-card-description">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p class="product-card-oldPrice">De: R$159,00</p>
-                        <p class="product-card-price">Por: R$133,00</p>
-                        <p class="product-card-installments">ou 2x de R$9,99</p>
-                        <a href=""><div class="product-card-buy">Comprar</div></a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-img"></div>
-                    <div class="product-card-content">
-                        <p class="product-card-name">Product Number 0</p>
-                        <p class="product-card-description">Product long description number 0 just to make more than one like of text.</p>
-                        <p class="product-card-oldPrice">De: R$159,00</p>
-                        <p class="product-card-price">Por: R$133,00</p>
-                        <p class="product-card-installments">ou 10x de R$13,30</p>
-                        <a href=""><div class="product-card-buy">Comprar</div></a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-img"></div>
-                    <div class="product-card-content">
-                        <p class="product-card-name">Product Number 0</p>
-                        <p class="product-card-description">Product long description number 0 just to make more than one like of text.</p>
-                        <p class="product-card-oldPrice">De: R$159,00</p>
-                        <p class="product-card-price">Por: R$133,00</p>
-                        <p class="product-card-installments">ou 10x de R$13,30</p>
-                        <a href=""><div class="product-card-buy">Comprar</div></a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-img"></div>
-                    <div class="product-card-content">
-                        <p class="product-card-name">Product Number 0</p>
-                        <p class="product-card-description">Product long description number 0 just to make more than one like of text.</p>
-                        <p class="product-card-oldPrice">De: R$159,00</p>
-                        <p class="product-card-price">Por: R$133,00</p>
-                        <p class="product-card-installments">ou 10x de R$13,30</p>
-                        <a href=""><div class="product-card-buy">Comprar</div></a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-img"></div>
-                    <div class="product-card-content">
-                        <p class="product-card-name">Product Number 0</p>
-                        <p class="product-card-description">Product long description number 0 just to make more than one like of text.</p>
-                        <p class="product-card-oldPrice">De: R$159,00</p>
-                        <p class="product-card-price">Por: R$133,00</p>
-                        <p class="product-card-installments">ou 10x de R$13,30</p>
-                        <a href=""><div class="product-card-buy">Comprar</div></a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-img"></div>
-                    <div class="product-card-content">
-                        <p class="product-card-name">Product Number 0</p>
-                        <p class="product-card-description">Product long description number 0 just to make more than one like of text.</p>
-                        <p class="product-card-oldPrice">De: R$159,00</p>
-                        <p class="product-card-price">Por: R$133,00</p>
-                        <p class="product-card-installments">ou 10x de R$13,30</p>
-                        <a href=""><div class="product-card-buy">Comprar</div></a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-img"></div>
-                    <div class="product-card-content">
-                        <p class="product-card-name">Product Number 0</p>
-                        <p class="product-card-description">Product long description number 0 just to make more than one like of text.</p>
-                        <p class="product-card-oldPrice">De: R$159,00</p>
-                        <p class="product-card-price">Por: R$133,00</p>
-                        <p class="product-card-installments">ou 10x de R$13,30</p>
-                        <a href=""><div class="product-card-buy">Comprar</div></a>
-                    </div>               
-                </div>
-
-                <div class="product-card">
-                    <div class="product-card-img"></div>
-                    <div class="product-card-content">
-                        <p class="product-card-name">Product Number 0</p>
-                        <p class="product-card-description">Product long description number 0 just to make more than one like of text.</p>
-                        <p class="product-card-oldPrice">De: R$159,00</p>
-                        <p class="product-card-price">Por: R$133,00</p>
-                        <p class="product-card-installments">ou 10x de R$13,30</p>
-                        <a href=""><div class="product-card-buy">Comprar</div></a>
-                    </div>
-                </div>
-                <div class="product-more-row">
-                    <a href=""><div>Ainda mais produtos aqui!</div></a>
-                </div>
+            <div class="product-row" id="product-row">
+                <!-- PRODUCTS ARE ADD WITH JS -->
+            </div>
+            <div id="product-more-row">
+                <a id="product-more-btn" onClick="nextPageProducts()" data-nextlink=""><div>Ainda mais produtos aqui!</div></a>
             </div>
         </div>
     </section>
