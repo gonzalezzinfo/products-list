@@ -237,6 +237,10 @@
     height: 30px;
     padding: 0 5px;
 }
+.newsletter-form form div small{
+    display: none;
+    color: red;
+}
 .newsletter-form form input[type=submit]{
     width: 260px;
     height: 39px;

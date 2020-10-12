@@ -74,3 +74,33 @@ function showProducts(result){
     btnMore.setAttribute('data-nextlink', "https://"+result.nextPage );
     
 }
+
+// Validation email, of Newsletter section
+var inputEmail = document.querySelectorAll('div.newsletter-form form div input')[1];
+
+inputEmail.addEventListener("blur", function( event ) {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(inputEmail.value)){
+      document.querySelector('div.newsletter-row form small').style.display = "none";
+      document.querySelectorAll('div.newsletter-form form div input')[1].style.border = "1px solid #888888";
+      return (true)
+    }
+      document.querySelector('div.newsletter-row form small').style.display = "block";
+      document.querySelectorAll('div.newsletter-form form div input')[1].style.border = "1px solid #FF0000";
+      alert("Favor digite um e-mail válido!");
+      return (false)
+  }, true);
+
+// Validation email, of form section  
+var formInputEmail = document.querySelector('div.form-form form input#email');
+
+formInputEmail.addEventListener("blur", function( event ) {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(formInputEmail.value)){
+      document.querySelector('div.form-form form input#email').style.border = "1px solid #888888";
+      document.querySelector('div.form-form form input#email').style.borderRadius = "0px";
+      return (true)
+    }
+      document.querySelector('div.form-form form input#email').style.border = "1px solid #FF0000";
+      document.querySelector('div.form-form form input#email').style.borderRadius = "4px";
+      alert("Favor digite um e-mail válido!");
+      return (false)
+  }, true);
