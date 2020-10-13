@@ -268,7 +268,10 @@
 
 /* MOBILE */
 @media only screen and (max-width: 600px) {
-
+    /* Header section */
+  .header-content a div{
+    margin: 20px 10px 0;
+  }
     /* First section */
   .content{
     padding: 0;
